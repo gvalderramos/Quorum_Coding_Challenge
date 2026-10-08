@@ -1,0 +1,21 @@
+[project]
+name = "quorum-coding-challenge"
+version = "0.1.0"
+description = "Quorum Coding Challenge"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+quorum-coding-challenge = "quorum_coding_challenge.main:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "black>=26.10.0",
+    "pytest>=8.3",
+    "ruff>=0.16.10",
+]
